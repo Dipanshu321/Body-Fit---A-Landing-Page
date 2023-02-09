@@ -1,0 +1,1520 @@
+*{
+    box-sizing: border-box;
+
+}
+
+/* <<<<< NAVBAR AND NAVBAR COMPONENTS >>>>> */
+
+.navbar {
+    display: flex;
+    margin-top: -10px;
+    background-color: black;
+    width: 100vw;
+    margin-left: -8px;
+    opacity: 0.8;
+
+}
+.navbar img {
+    width: 13vw;
+    height: 15vh;
+    margin-top: -25px;
+    filter: invert(1);
+}
+.navbar-components ul {
+    display: flex;
+    list-style: none;
+}
+.navbar-components ul li {
+    font-size: 24px;
+    margin: 5px 14px;
+    margin-left: 12px;
+    text-decoration: none;
+} 
+.navbar-components ul li a {
+    text-decoration: none;
+    color: #ffe1e1;
+} 
+.navbar-components ul li a:hover {
+    color: #ffa6a6;
+}
+input#search {
+    width: 18vw;
+    height: 5vh;
+    margin-top: 14px;
+    margin-left: 28px;
+    text-align: center;
+}
+
+
+/* <<<<< LOGO NAME >>>>> */
+
+.logo-name h2 {
+    display: inline;
+    position: absolute;
+    left: 33px;
+    margin-top: 8px;
+    font-size: 32px;
+    color: rgb(213 133 133);
+}
+
+
+
+/* <<<<< HOME PAGE >>>>> */
+
+.home{
+    width: 100vw;
+    height: 76vh;
+    margin-left: -8px;
+    background-position: 0px -139px;;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    opacity: 0.7;
+    top: 0px;
+    animation: home-img-animation 20s ease-in-out infinite;  
+    animation: home-img-animation 20s ease-in-out infinite;  
+}
+.home-quote {
+    display: flex;
+    color: white;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    font-size: 28px;
+}
+.home-quote p {
+    width: 58%;
+    font-weight: 800;
+    color: white;
+}
+@keyframes home-img-animation{
+    0%,100%{
+        background-image: url(./home/Gym\ BG.jpg);
+
+        
+    }
+    25%{
+        background-image: url(./home/wyprobuj-5-najlepszych-cwiczen-cardio-na-silowni_5.jpg);
+        
+        
+    }
+    50%{
+        background-image: url(./home/yoga_for_belly_fat_reduce.webp);
+        
+    }
+    75%{
+        background-image: url(./home/fitness-room-1180062_1920.jpg);
+        
+    }
+}
+
+
+/* <<<<< OUR PRODUCTS SECTION >>>>> */
+
+
+.section-1 h2 {
+    font-size: 35px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+.products-section {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 'product-1 product-2 product-3 product-4';
+    margin-left: 28px;
+
+}
+.products-section img {
+    width: 18rem;
+    padding-top: 49px;
+    padding-left: 35px;
+}
+
+.product {
+    border: 2px solid #ff6d61;
+    border-radius: 33px;
+    background-color: #ffe8e8;
+    width: 100%;
+    height: 50vh;
+}
+#product-1 {
+    grid-area: product-1;
+}
+#product-2 {
+    grid-area: product-2;
+}
+#product-3 {
+    grid-area: product-3;
+}
+#product-4 {
+    grid-area: product-4;
+}
+#product-4 img {
+    height: 22rem;
+    margin-top: -45px;
+}
+
+
+
+/* <<<<< FACILITIES SECTION >>>>> */
+
+
+.section-2 {
+    margin-top: -19px;
+}
+.section-2-heading-1 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.section-2-heading-2 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: -50px;
+    color: #ffb400;
+    text-decoration: underline;
+}
+
+.facilities-section {
+    display: flex;
+    flex-direction: column;
+}
+.facility {
+    position: absolute;
+}
+.facility img {
+    width: 8vw;
+}
+.facility p {
+    text-align: center;
+    font-size: 26px;
+    margin: 21px -76px;
+}
+
+#facility-1 {
+    left: 8rem;
+    top: 74rem;
+}
+#facility-2 {
+    left: 37rem;
+    top: 74rem;
+    
+}
+#facility-3 {
+    left: 65rem;
+    top: 74rem;
+}
+#facility-4 {
+    left: 20rem;
+    top: 86rem;
+    
+}
+#facility-5 {
+    left: 53rem;
+    top: 86rem;
+    
+}
+
+
+
+/* <<<<< CLIENTS SECTION >>>>> */
+
+
+.section-3 {
+    position: absolute;
+    top: 99rem;
+    left: 18px;
+    width: 100%;
+}
+
+.section-3 h2 {
+    text-align: center;
+    font-size: 42px;
+    text-decoration: underline;
+}
+
+.clients-section-3 {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: "client-1 client-2 client-3 client-4";
+}
+
+
+#client-1 {
+    grid-area: client-1;
+}
+#client-2 {
+    grid-area: client-2;
+}
+#client-3 {
+    grid-area: client-3;
+}
+#client-4 {
+    grid-area: client-4;
+}
+
+.client {
+    width: 16rem;
+    border-radius: 15px;
+    height: 37vh;
+}
+
+.client img {
+    width: 15rem;
+    padding-top: 17px;
+    padding-left: 22px;
+
+}
+#client-3 img {
+ margin-top: 55px;
+}
+
+
+
+
+/* <<<<< TESTIMONIALS SECTION >>>>> */
+
+.section-4 {
+    position: absolute;
+    top: 126rem;
+    width: 100%;
+    margin-top: -44px;
+    background-color: #fff2f1;
+}
+.testimonial-section-4 {
+    margin-top: -23px;
+}
+
+.testimonial-heading {
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+}
+.testimonial-para {
+    text-align: center;
+    font-size: 22px;
+    margin-top: -16px;
+}
+#testimonial-1 {
+    display: flex;
+    flex-direction: column;
+    width: 22rem;
+    height: 52vh;
+    margin-left: 32px;
+    margin-top: 60px;
+    border: 2px solid #ff6d61;
+    border-radius: 15px;
+    align-items: center;
+}
+
+#testimonial-1 img {
+    width: 12rem;
+    margin: -21px 0px;
+}
+#testimonial-1 p {
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-top: -2px;
+}
+
+
+#testimonial-2 {
+    display: flex;
+    flex-direction: column;
+    width: 22rem;
+    height: 52vh;
+    margin-left: 32px;
+    margin-top: 37px;
+    border: 2px solid #ff6d61;
+    border-radius: 15px;
+    align-items: center;
+    position: absolute;
+    top: 133px;
+    left: 29rem;
+}
+
+#testimonial-2 img {
+    width: 12rem;
+    margin: -21px 0px;
+}
+#testimonial-2 p {
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-top: -2px;
+}
+
+
+#testimonial-3 {
+    display: flex;
+    flex-direction: column;
+    width: 22rem;
+    height: 52vh;
+    margin-left: 32px;
+    margin-top: 37px;
+    border: 2px solid #ff6d61;
+    border-radius: 15px;
+    align-items: center;
+    position: absolute;
+    top: 133px;
+    left: 56rem;
+}
+    
+#testimonial-3 img {
+    width: 12rem;
+    margin: -21px 0px;
+}
+#testimonial-3 p {
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-top: -2px;
+}
+
+
+
+/* <<<<< CONTACT SECTION >>>>> */
+
+
+.contact-section {
+    display: flex;
+    position: absolute;
+    top: 158rem;
+    left: 0px;
+    flex-direction: column;
+    width: 100%;
+    height: 54vh;
+    background-image: url(contact\ page\ bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+.contact-section h2 {
+    position: absolute;
+    left: 52rem;
+    top: -20px;
+    font-size: 37px;
+    color: white;
+}
+.contact-section-heading {
+    position: absolute;
+    left: 1046px;
+    top: -27px;
+    font-size: 37px;
+    font-weight: 800;
+    color: #ffa900;
+}
+.contact-section form {
+    display: flex;
+    position: absolute;
+    left: 51rem;
+    top: 5rem;
+}
+.contact-section form {
+    flex-direction: column;
+}
+
+.contact-section form input {
+    width: 23rem;
+    height: 40px;
+    text-align:center;
+}
+
+.contact-section form #mystate{
+    width: 23rem;
+    height: 5vh;
+    text-align:center;
+}
+.contact-section form button {
+    width: 10rem;
+    height: 5vh;
+    position: relative;
+    left: 89px;
+    top: 16px;
+    background-color: #bef6ff;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 7px;
+}
+.contact-section form button:hover {
+    color: red;
+    font-weight: 800;
+    cursor: pointer;
+}
+.contact-info {
+    display: flex;
+    position: absolute;
+    left: 6rem;
+    top: 5rem;
+    font-size: 23px;
+    color: white;
+}
+.contact-info img {
+    position: absolute;
+    width: 18px;
+    top: 21px;
+    left: 3px;
+}
+
+
+/* <<<<< FOOTER >>>>> */
+
+footer {
+    position: absolute;
+    display: block;
+    background-color: black;
+    color: white;
+    top: 2883px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    height: 37px;
+}
+
+
+
+
+
+
+
+
+@media (max-width:480px) and (min-width:0px){
+    .navbar {
+        position:absolute;
+        width: 80rem;
+        height: 119vh;
+    
+    }
+    .navbar img {
+        position: absolute;
+        left: 16rem;
+        width: 40vw;
+        height: 27vh;
+    }
+    .navbar-components ul {
+        position: absolute;
+        display: block;
+        left: 22rem;
+        top: 9rem;
+    }
+    .navbar-components ul li {
+        font-size: 57px;
+        display: block;
+        margin: 15px 0px;
+    
+    } 
+    input#search {
+      display: none;
+    }
+
+    .logo-name h2 {
+        left: 30rem;
+        top: 33px;
+        width: 18rem;
+        font-size: 73px;
+    }
+
+
+
+    .home{
+        width: 265vw;
+        height: 128vh;
+        position: absolute;
+        top: 41rem;
+    }
+
+
+    /* <<<<< OUR PRODUCTS SECTION >>>>> */
+
+    .section-1{
+        position: absolute;
+        top: 85rem;
+        width: 263vw;
+        height: 358vh;
+    }
+
+    .section-1 h2 {
+        font-size: 59px;
+        position: relative;
+        left: 2rem;
+    }
+
+
+    .products-section {
+        display: flex;
+        flex-direction: column;
+        width: 96%;
+        height: 327vh
+    }
+    .products-section img {
+        width: 29rem;
+        display: block;
+        margin: auto;
+        
+    }
+
+    #product-1 {
+        height: 35rem;
+    }
+    #product-2 {
+        height: 35rem;
+    }
+    #product-3 {
+        height: 35rem;
+    }
+    #product-4 {
+        height: 35rem;
+    }
+    #product-4 img {
+        height: 35rem;
+        margin-top: -45px;
+    }
+
+
+    /* <<<<< FACILITIES SECTION >>>>> */
+
+
+    .section-2 {
+        display: flex;
+        position: absolute;
+        top: 210rem;
+        width: 263vw;
+        height: 425vh;
+    }
+    .section-2-heading-1 {
+        font-size: 38px;
+    }
+
+    .section-2-heading-2 {
+        font-size: 43px;
+    }
+
+    .facilities-section {
+        width: 263vw;
+        height: 181vh;
+
+    }
+
+    .facility img {
+        width: 87vw;
+    }
+    .facility p {
+        font-size: 69px;
+        margin: 29px 20px;
+    }
+
+    #facility-1 {
+        position: absolute;
+        width: 117vw;
+        left: 2rem;
+        top: 24rem;
+    }
+    #facility-2 {
+        position: absolute;
+        left: 44rem;
+        top: 24rem;
+        width: 106vw;
+        
+    }
+    #facility-3 {
+        position: absolute;
+        left: 2rem;
+        top: 61rem;
+        width: 107vw;
+    }
+    #facility-4 {
+        position: absolute;
+        left: 45rem;
+        top: 62rem;
+        width: 103vw;
+        
+    }
+    #facility-5 {
+        position: absolute;
+        left: 24rem;
+        top: 102rem;
+        width: 105vw;
+        
+    }
+
+
+
+    /* <<<<< CLIENTS SECTION >>>>> */
+
+
+    .section-3 {
+        position: absolute;
+        top: 355rem;
+        width: 261vw;
+        height: 358vh;
+    }
+
+    .section-3 h2 {
+        font-size: 59px;
+        position: relative;
+        left: 2rem;
+    }
+
+    .clients-section-3 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 356vh;
+    }
+
+
+    #client-1 {
+        height: 35rem;
+        width: 77rem;
+    }
+    #client-2 {
+        height: 35rem;
+        width: 77rem;
+    }
+    #client-3 {
+        height: 35rem;
+        width: 77rem;
+    }
+    #client-4 {
+        height: 35rem;
+        width: 77rem;
+    }
+
+    .client img {
+        width: 29rem;
+        display: block;
+        margin: auto;
+    }
+
+
+
+    /* <<<<< TESTIMONIALS SECTION >>>>> */
+
+    .section-4 {
+        top: 494rem;
+        width: 263vw;
+        height: 475vh;
+    }
+    .testimonial-section-4 {
+        height: 147rem;
+    }
+
+    .testimonial-heading {
+        font-size: 66px;
+    }
+    .testimonial-para {
+        font-size: 37px;
+    }
+    #testimonial-1 {
+        margin: 0px;
+        position: absolute;
+        top: 18rem;
+        left: 18rem;
+        width: 46rem;
+        height: 122vh;
+    }
+
+    #testimonial-1 img {
+        width: 24rem
+    }
+    #testimonial-1 p {
+        font-size: 32px;
+    }
+
+
+    #testimonial-2 {
+        margin: 0px;
+        position: absolute;
+        top: 64rem;
+        left: 18rem;
+        width: 46rem;
+        height: 136vh;
+    }
+
+    #testimonial-2 img {
+        width: 24rem
+    }
+    #testimonial-2 p {
+        font-size: 32px;
+    }
+
+
+    #testimonial-3 {
+        margin: 0px;
+        position: absolute;
+        top: 116rem;
+        left: 18rem;
+        width: 46rem;
+        height: 128vh;
+    }
+        
+    #testimonial-3 img {
+        width: 24rem
+    }
+    #testimonial-3 p {
+        font-size: 32px;
+    }
+
+
+
+    /* <<<<< CONTACT SECTION >>>>> */
+
+
+    .contact-section {
+        top: 656rem;
+        left: 0px;
+        width: 264vw;
+        height: 153vh;
+    }
+    .contact-section h2 {
+        left: 20rem;
+        top: 1rem;
+        font-size: 61px;
+    }
+    .contact-section-heading {
+        left: 44rem;
+        top: 0rem;
+        font-size: 65px;
+    }
+    .contact-section form {
+        left: 18rem;
+        top: 13rem;
+    }
+
+    .contact-section form input {
+        width: 43rem;
+        height: 49px;
+        font-size: 27px;
+    }
+
+    .contact-section form #mystate{
+        width: 43rem;
+        height: 9vh;
+        font-size: 26px;
+    }
+    .contact-section form button {
+        width: 17rem;
+        height: 13vh;
+        left: 12rem;
+        top: 33px;
+        font-size: 24px;
+    }
+
+    .contact-info {    
+        left: 14rem;
+        top: 37rem;
+        font-size: 33px;
+        height: 44vh;
+    }
+    .contact-info img {
+        width: 26px;
+        top: 34px;
+        left: 2px;
+    }
+
+
+    /* <<<<< FOOTER >>>>> */
+
+    footer {
+        font-size: 23px;
+        top: 708rem;
+        left: 0px;
+        width: 264vw;
+        height: 66px;
+    }
+}
+
+
+
+@media (max-width:768px) and (min-width:481px){
+
+    .navbar {
+        position: absolute;
+        width: 190rem;
+        height: 156vh;
+    
+    }
+    .navbar img {
+        position: absolute;
+        left: 65rem;
+        width: 53vw;
+        height: 47vh;
+    }
+    .navbar-components ul {
+        position: absolute;
+        display: block;
+        left: 82rem;
+        top: 18rem;
+    }
+    .navbar-components ul li {
+        font-size: 63px;
+        display: block;
+        margin: 15px 0px;
+    
+    } 
+    input#search {
+      display: none;
+    }
+
+    .logo-name h2 {
+        left: 93rem;
+        top: 81px;
+        width: 35rem;
+        font-size: 121px;
+    }
+
+
+
+    .home{
+        width: 395vw;
+        height: 231vh;
+        position: absolute;
+        top: 55rem;
+    }
+    .home-quote {
+        width: 228rem;
+        left: -20rem;
+        top: 24rem;
+        font-size: 83px;
+        position: absolute;
+    }
+
+
+    /* <<<<< OUR PRODUCTS SECTION >>>>> */
+
+    .section-1{
+        position: absolute;
+        top: 136rem;
+        width: 394vw;
+        height: 488vh;
+    }
+
+    .section-1 h2 {
+        font-size: 107px;
+        position: relative;
+        left: 0rem;
+        margin: 47px 0px;
+    }
+
+
+    .products-section {
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+        height: 426vh;
+    }
+    .products-section img {
+        width: 36rem;
+        display: block;
+        margin: auto;
+        
+    }
+
+    #product-1 {
+        height: 47rem;
+    }
+    #product-2 {
+        height: 49rem;
+        margin-top: 50px;
+    }
+    #product-3 {
+        height: 49rem;
+        margin-top: 50px;
+    }
+    #product-4 {
+        height: 49rem;
+        margin-top: 50px;
+    }
+    #product-4 img {
+        height: 35rem;
+        margin-top: -45px;
+    }
+
+
+    /* <<<<< FACILITIES SECTION >>>>> */
+
+
+    .section-2 {
+        display: flex;
+        position: absolute;
+        top: 302rem;
+        width: 394vw;
+        height: 441vh;
+    }
+    .section-2-heading-1 {
+        font-size: 74px;
+    }
+
+    .section-2-heading-2 {
+        font-size: 90px;
+        margin-top: -10rem;
+    }
+
+    .facilities-section {
+        width: 394vw;
+        height: 434vh;
+
+    }
+
+    .facility img {
+        width: 87vw;
+    }
+    .facility p {
+        font-size: 86px;
+        margin: 36px 0px;
+    }
+
+    #facility-1 {
+        position: absolute;
+        width: 117vw;
+        left: 8rem;
+        top: 40rem;
+    }
+    #facility-2 {
+        position: absolute;
+        left: 77rem;
+        top: 39rem;
+        width: 106vw;
+        
+    }
+    #facility-3 {
+        position: absolute;
+        left: 133rem;
+        top: 36rem;
+        width: 107vw;
+    }
+    #facility-4 {
+        position: absolute;
+        left: 49rem;
+        top: 98rem;
+        width: 103vw;
+        
+    }
+    #facility-5 {
+        position: absolute;
+        left: 117rem;
+        top: 94rem;
+        width: 105vw;
+        
+    }
+
+
+
+    /* <<<<< CLIENTS SECTION >>>>> */
+
+
+    .section-3 {
+        position: absolute;
+        top: 458rem;
+        width: 394vw;
+        height: 559vh;
+    }
+
+    .section-3 h2 {
+        font-size: 122px;
+        position: relative;
+        left: 2rem;
+    }
+
+    .clients-section-3 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 515vh;
+    }
+
+
+    #client-1 {
+        height: 35rem;
+        width: 188rem;
+    }
+    #client-2 {
+        height: 49rem;
+        width: 188rem
+    }
+    #client-3 {
+        height: 36rem;
+        width: 188rem;
+    }
+    #client-4 {
+        height: 50rem;
+        width: 188rem;
+    }
+
+    .client img {
+        width: 47rem;
+        display: block;
+        margin: auto;
+    }
+
+
+
+    /* <<<<< TESTIMONIALS SECTION >>>>> */
+
+    .section-4 {
+        top: 658rem;
+        width: 394vw;
+        height: 496vh;
+    }
+    .testimonial-section-4 {
+        height: 142rem;
+    }
+
+    .testimonial-heading {
+        font-size: 131px;
+    }
+    .testimonial-para {
+        font-size: 80px;
+    }
+    #testimonial-1 {
+        margin: 0px;
+        position: absolute;
+        top: 38rem;
+        left: 7rem;
+        width: 86rem;
+        height: 182vh;
+    }
+
+    #testimonial-1 img {
+        width: 35rem
+    }
+    #testimonial-1 p {
+        font-size: 49px;
+    }
+
+
+    #testimonial-2 {
+        margin: 0px;
+        position: absolute;
+        width: 86rem;
+        height: 182vh;
+        top: 38rem;
+        left: 99rem;
+    }
+
+    #testimonial-2 img {
+        width: 35rem
+    }
+    #testimonial-2 p {
+        font-size: 49px;
+    }
+
+
+    #testimonial-3 {
+        margin: 0px;
+        position: absolute;
+        width: 86rem;
+        height: 182vh;
+        top: 108rem;
+        left: 47rem;
+    }
+        
+    #testimonial-3 img {
+        width: 35rem
+    }
+    #testimonial-3 p {
+        font-size: 49px;
+    }
+
+
+
+    /* <<<<< CONTACT SECTION >>>>> */
+
+
+    .contact-section {
+        top: 830rem;
+        left: 0px;
+        width: 395vw;
+        height: 176vh;
+    }
+    .contact-section h2 {
+        left: 113rem;
+        top: 5rem;
+        font-size: 80px;
+    }
+    .contact-section-heading {
+        left: 143rem;
+        top: 4rem;
+        font-size: 80px;
+    }
+    .contact-section form {
+        left: 104rem;
+        top: 21rem;
+    }
+
+    .contact-section form input {
+        width: 67rem;
+        height: 99px;
+        font-size: 46px;
+    }
+
+    .contact-section form #mystate{
+        width: 67rem;
+        height: 18vh;
+        font-size: 46px;
+    }
+    .contact-section form button {
+        width: 32rem;
+        height: 19vh;
+        left: 17rem;
+        top: 38px;
+        font-size: 41px;
+    }
+
+    .contact-info {    
+        left: 9rem;
+        top: 20rem;
+        font-size: 54px;
+        height: 44vh;
+    }
+    .contact-info img {
+        width: 38px;
+        top: 57px;
+        left: 2px;
+    }
+
+
+    /* <<<<< FOOTER >>>>> */
+
+    footer {
+        position: absolute;
+        display: block;
+        background-color: black;
+        color: white;
+        top: 891rem;
+        left: 0px;
+        width: 396vw;
+        text-align: center;
+        height: 153px;
+        font-size: 59px;
+    }
+}
+
+
+
+@media (max-width:1279px) and (min-width:769px) {
+
+
+    /* <<<<< NAVBAR AND NAVBAR COMPONENTS >>>>> */
+
+    .navbar {
+        margin-top: 0px;
+        width: 100vw;
+        height: 64px;
+        margin-left: 0px;
+        opacity: 0.8;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    .navbar img {
+        width: 13vw;
+        height: 15vh;
+        margin-top: 0px;
+        position: absolute;
+        top: -25px;
+        left: 24px;
+    }
+    .navbar-components ul {
+        position: absolute;
+        left: 145px;
+    }
+
+    input#search {
+        width: 16vw;
+        height: 4vh;
+        margin-top: 0px;
+        position: absolute;
+        left: 62rem;
+        top: 19px;
+    }
+
+
+    /* <<<<< LOGO NAME >>>>> */
+
+    .logo-name h2 {
+        left: 43px;
+        top: 83px;
+        margin-top: 0px;
+    }
+
+
+
+    /* <<<<< HOME PAGE >>>>> */
+
+    .home{
+        width: 100vw;
+        height: 87vh;
+        background-position: center center;
+        background-attachment: scroll;
+        position: absolute;
+        top: 64px;
+    }
+    .home-quote {
+        font-size: 29px;
+    }
+
+
+    /* <<<<< OUR PRODUCTS SECTION >>>>> */
+
+    .section-1{
+        position: absolute;
+        width: 100vw;
+        height: 69vh;
+        left: 0px;
+        top: 34rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .products-section {
+        width: -144rpx;
+        top: 7rem;
+        left: 1rem;
+        margin-left: 21px;
+    }
+    .products-section img {
+        margin-top: 19px;
+        margin-left: 12px;
+        width: 19vw;
+        height: 39vh;
+        left: 0rem;
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+
+    #product-1 {
+        width: 22vw;
+        height: 49vh;
+    }
+    #product-2 {
+        width: 22vw;
+        height: 49vh;
+    }
+    #product-3 {
+        width: 22vw;
+        height: 49vh;
+    }
+    #product-4 {
+        width: 22vw;
+        height: 49vh;
+    }
+    #product-4 img {
+        width: 18vw;
+        height: 44vh;
+        margin-top: 10px;
+    }
+
+
+
+    /* <<<<< FACILITIES SECTION >>>>> */
+
+
+    .section-2 {
+        position: absolute;
+        top: 59rem;
+        width: 100vw;
+        height: 131vh;
+    }
+
+    .facility {
+        position: absolute;
+    }
+    .facility img {
+        width: 13vw;
+        display: block;
+        margin: auto;
+    }
+    .facility p {
+        text-align: center;
+        font-size: 26px;
+        margin: 21px -76px;
+    }
+
+    #facility-1 {
+        left: 4rem;
+        top: 14rem;
+        width: 19vw;
+        height: 29vh;
+    }
+    #facility-2 {
+        left: 29rem;
+        top: 14rem;
+        width: 19vw;
+        height: 29vh;
+        
+    }
+    #facility-3 {
+        left: 56rem;
+        top: 14rem;
+        width: 19vw;
+        height: 29vh;
+    }
+    #facility-4 {
+        left: 16rem;
+        top: 31rem;
+        width: 19vw;
+        height: 29vh;
+        
+    }
+    #facility-5 {
+        left: 45rem;
+        top: 31rem;
+        width: 19vw;
+        height: 29vh;
+        
+    }
+
+
+
+    /* <<<<< CLIENTS SECTION >>>>> */
+
+
+    .section-3 {
+        position: absolute;
+        top: 104rem;
+        left: 0px;
+        width: 100vw;
+        height: 74vh;
+    }
+
+    .clients-section-3 {
+        position: absolute;
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas: "client-1 client-2 client-3 client-4";
+        width: 100vw;
+        height: 52vh;
+    }
+
+
+    #client-1 {
+        width: 23vw;
+        height: 50vh;
+    }
+    #client-2 {
+        width: 20vw;
+        height: 46vh;
+    }
+    #client-3 {
+        width: 20vw;
+        height: 46vh;
+    }
+    #client-4 {
+        width: 20vw;
+        height: 46vh;
+    }
+
+    .client {
+        border-radius: 15px;
+    }
+
+    .client img {
+        width: 15rem;
+        display: block;
+        margin: auto;
+
+    }
+
+
+
+
+    /* <<<<< TESTIMONIALS SECTION >>>>> */
+
+    .section-4 {
+        position: absolute;
+        top: 131rem;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        margin-top: 0px;
+    }
+    .testimonial-section-4 {
+        width: 100vw;
+        height: 63vh;
+        margin-top: -23px;
+    }
+
+    #testimonial-1 {
+        display: flex;
+        flex-direction: column;
+        width: 22rem;
+        height: 60vh;
+        margin-left: 25px;
+        margin-top: 60px;
+        border: 2px solid #ff6d61;
+        border-radius: 15px;
+        align-items: center;
+    }
+
+
+    #testimonial-2 {
+        display: flex;
+        flex-direction: column;
+        width: 22rem;
+        height: 60vh;
+        margin-left: 14px;
+        margin-top: 37px;
+        border: 2px solid #ff6d61;
+        border-radius: 15px;
+        align-items: center;
+        position: absolute;
+        top: 133px;
+        left: 29rem;
+    }
+
+    #testimonial-3 {
+        display: flex;
+        flex-direction: column;
+        width: 22rem;
+        height: 60vh;
+        margin-left: 0px;
+        margin-top: 37px;
+        border: 2px solid #ff6d61;
+        border-radius: 15px;
+        align-items: center;
+        position: absolute;
+        top: 133px;
+        left: 56rem;
+    }
+
+
+
+    /* <<<<< CONTACT SECTION >>>>> */
+
+
+    .contact-section {
+        display: flex;
+        position: absolute;
+        top: 166rem;
+        left: 0px;
+        flex-direction: column;
+        width: 100vw;
+        height: 63vh;
+        background-image: url(contact\ page\ bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.9;
+    }
+
+
+    /* <<<<< FOOTER >>>>> */
+
+    footer {
+        position: absolute;
+        display: block;
+        background-color: black;
+        color: white;
+        top: 3009px;
+        left: 0px;
+        width: 100vw;
+        text-align: center;
+        height: 37px;
+    }
+}
+
+   
